@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+:root{
+    --first-main-color: #F44E77;
+    --second-main-color: #554DDE;
+    --text-color: #6A6D9E; 
+    --white-text-color: #FFFFFF ; 
+    --btn-color: #16194F;
+    --heading-h1: 60px;
+    --heading-h2: 50px;
+    --heading-h3: 40px;
+    --heading-h4: 24px;
+    --body-main-text: 20px;
+    --medium-text: 17px;
+    --caption-text: 15px;
+    --small-text: 13px;
+} 
+
+body{
+    background-color: #F2F6FF;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background{
+    width: 2000px;
+    height: 800px;
+    position: absolute;
+    z-index: -1;
+}
+
+.header{
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.header-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-list_items{
+    color: var(--white-text-color);
+}
+
+.header-list_items:hover{
+    cursor: pointer;
+}
+
+.header-list_btn-signup{
+    background-color: var(--first-main-color);
+    color: var(--white-text-color);
+    border: none;
+    border-radius: 1.2rem;
+    height: 56px;
+    width: 167px;
+}
+
+.main-page{
+    display: flex;
+}   
+
+.main-page_text{
+    margin-top: 3rem;
+    width: 45%;
+}
+
+.main-page_main-text{
+    font-size: var(--heading-h1);
+    color: var(--white-text-color);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.main-page_small-text{
+    font-size: var(--body-main-text);
+    color: var(--white-text-color);
+    margin-bottom: 3.5rem;
+    width: 70%;
+}
+
+.main-page_btn-register{
+    background-color: var(--btn-color);
+    color: var(--white-text-color);
+    border: none;
+    border-radius: 1.2rem;
+    height: 56px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-right{
+    margin-left: .5rem;
+}
+
+.main-page_phone{
+    margin-left: 5rem;
+    width: 50%;
+}
+
+.main-page_img-phone{
+    
+    position: absolute;
+    z-index: -1;
+}
+
+.main-page_phone-text{
+    font-size: var(--heading-h4);
+    color: var(--white-text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-cards_main-text{
+    color: var(--second-main-color);
+}
