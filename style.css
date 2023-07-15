@@ -33,6 +33,14 @@ body{
     flex-direction: column;
 }
 
+main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .background{
     width: 2000px;
     height: 800px;
@@ -52,8 +60,14 @@ body{
     align-items: center;
 }
 
+.header-list_nav{
+    display: flex;
+}
+
 .header-list_items{
+    font-size: var(--medium-text);
     color: var(--white-text-color);
+    margin: 2rem;
 }
 
 .header-list_items:hover{
@@ -63,6 +77,7 @@ body{
 .header-list_btn-signup{
     background-color: var(--first-main-color);
     color: var(--white-text-color);
+    font-size: var(--medium-text);
     border: none;
     border-radius: 1.2rem;
     height: 56px;
@@ -71,10 +86,13 @@ body{
 
 .main-page{
     display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
 }   
 
 .main-page_text{
     margin-top: 3rem;
+    margin-right: 10rem;
     width: 45%;
 }
 
@@ -92,7 +110,7 @@ body{
     width: 70%;
 }
 
-.main-page_btn-register{
+.main-page_btn-register, .graph_btn-learn-more{
     background-color: var(--btn-color);
     color: var(--white-text-color);
     border: none;
@@ -114,37 +132,166 @@ body{
 }
 
 .main-page_img-phone{
-    
     position: absolute;
     z-index: -1;
+}
+
+.main-page_phone-icon-avatar{
+    width: 75%;
+    margin-bottom: 1rem;
 }
 
 .main-page_phone-text{
     font-size: var(--heading-h4);
     color: var(--white-text-color);
+    font-weight: bold;
+    margin-bottom: .6rem;
+    margin-top: 1.3rem;
 }
 
+.main-page_phone-cards{
+    display: flex;
+    align-items: center;
+}
 
+.main-page_phone-first-card{
+    background-color: var(--first-main-color);
+    width: 190px;
+    height: 120px;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    margin-left: 0;
+}
 
+.main-page_phone-second-card{
+    background-color: darkviolet;
+    width: 160px;
+    height: 100px;
+    border-radius: 1.5rem;
+}
 
+.main-page_phone-elements{
+    padding: 1.5rem;
+    padding-top: 3rem;
+}
 
+.main-page_phone-icons{
+    display: flex;
+}
 
+.main-page_phone-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 60px;
+    background-color: var(--white-text-color);
+    margin: .5rem;
+    border-radius: 1.6rem;
+}
 
+.main-page_phone-icon:first-child{
+    margin-left: 0;
+}
 
+.main-page_phone-overview{
+    display: flex;
+}
 
+.main-page_phone-overview-items, .main-page_phone-overview-items1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    height: 60px;
+    width: 60px;
+    color: var(--first-main-color);
+    background-color: var(--white-text-color);
+    font-size: var(--medium-text);
+    font-weight: bold;
+    border-radius: 1.2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-.info-cards_main-text{
+.main-page_phone-overview-items1{
     color: var(--second-main-color);
+}
+
+.main-page_phone-overview-items:first-child{
+    margin-left: 0;
+}
+
+.info-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-cards_text{
+    margin-left: 4rem;
+    width: 30%;
+    margin-top: 4rem;
+}
+
+.info-cards_card{
+
+}
+
+.info-cards_main-text, .graph_main-text{
+    font-size: var(--heading-h2);
+    color: var(--second-main-color);
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.info-cards_small-text, .graph_small-text{
+    font-size: var(--body-main-text);
+    color: var(--text-color);
+}
+
+.graph{
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph_info-blocks{
+    display: flex;
+}
+
+.graph_info-block-balance, .graph_info-block-transaction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem;
+    width: 50%;
+    height: 150px;
+    background-color: var(--white-text-color);
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.graph_info-block-balance{
+    margin-left: 3.5rem;
+}
+
+.graph_info-block-transaction{
+    margin-right: 3.5rem;
+}
+
+.graph_text{
+    width: 35%;
+}
+
+.graph_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.graph_info-text{
+    font-size: var(--body-main-text);
+}
+
+.graph_info-value{
+    color: var(--second-main-color);
+    font-size: var(--heading-h3);
+    font-weight: bold;
 }
