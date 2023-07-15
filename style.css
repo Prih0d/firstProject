@@ -136,6 +136,28 @@ main{
     z-index: -1;
 }
 
+.main-page_phone-first-card-number, .main-page_phone-first-card-name, .main-page_phone-second-card-number, .main-page_phone-second-card-name{
+    color: var(--white-text-color);
+}
+
+.main-page_phone-first-card{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-page_phone-card{
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.elements-with-phone{
+    position: absolute;
+    margin-top: -8rem;
+    margin-left: -21rem;
+}
+
 .main-page_phone-icon-avatar{
     width: 75%;
     margin-bottom: 1rem;
@@ -223,34 +245,45 @@ main{
 
 .info-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 13rem;
 }
 
 .info-cards_text{
-    margin-left: 4rem;
-    width: 30%;
-    margin-top: 4rem;
+    padding-top: 3rem;
+    width: 70%;
+}
+
+.info-cards_card-logo{
+    margin-left: 3rem;
+    position: absolute;
 }
 
 .info-cards_card{
-
+    width: 90%;
 }
 
-.info-cards_main-text, .graph_main-text{
+.info-cards_main-text, .graph_main-text, .info-language_main-text{
     font-size: var(--heading-h2);
     color: var(--second-main-color);
     font-weight: bold;
     margin-bottom: 3rem;
 }
 
-.info-cards_small-text, .graph_small-text{
+.info-cards_small-text, .graph_small-text, .info-language_small-text{
     font-size: var(--body-main-text);
     color: var(--text-color);
+    margin-bottom: 3rem;
 }
 
 .graph{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.graph_info{
+    margin-right: 4rem;
 }
 
 .graph_info-blocks{
@@ -294,4 +327,239 @@ main{
     color: var(--second-main-color);
     font-size: var(--heading-h3);
     font-weight: bold;
+}
+
+.info-language{
+    display: flex;
+    justify-content: center ;
+    margin-bottom: 20rem;
+}
+
+.info-language_text{
+    margin-right: 6rem;
+    width: 30%;
+}
+
+.info-language_img-profile{
+    display: flex;
+    align-items: center;
+}
+
+.info-language_profile-text{
+    font-size: var(--body-main-text);
+    color: var(--text-color);
+}
+
+.service-advertising, .questions-advertising{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.service-advertising_main-text, .questions-advertising_main-text{
+    font-size: var(--heading-h3);
+    color: var(--second-main-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.service-advertising_main-text-red, .questions-advertising_main-text-red{
+    color: var(--first-main-color);
+}
+
+.service-advertising_small-text, .questions-advertising_small-text{
+    font-size: var(--body-main-text);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.questions-advertising_small-text{
+    width: 60%;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.service_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: var(--white-text-color);
+    margin: 1rem;
+    width: 40%;
+}
+
+.service_title{
+    margin: 2rem;
+    font-size: var(--heading-h3);
+    font-weight: bold;
+}
+
+.service_price{
+    font-size: var(--heading-h3);
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.sirvice_price{
+    font-size: var(--heading-h1);
+}
+
+.service_text{
+    text-align: center;
+    font-size: var(--body-main-text);
+    color: var(--text-color);
+    width: 70%;
+    margin-bottom: 3rem;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.service_btn-started {
+    border: 1px solid var(--btn-color);
+    color: var(--btn-color);
+}
+
+.service_btn-started::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.service_btn-started:hover {
+    color: #000;
+}
+
+.service_btn-started:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.service_btn-started:active {
+    top: 2px;
+}
+
+.service_possibilities-list-item, .service_possibilities-list-item-grey{
+    margin-bottom: .5rem;
+    font-size: var(--medium-text);
+}
+
+.fa, .fa-grey{
+    margin-right: 1rem;
+    color: var(--second-main-color)
+}
+
+.service_possibilities-list-item-grey, .fa-grey{
+    color: rgb(196, 196, 196);
+}
+
+.color-grey{
+    color: rgb(196, 196, 196);
+}
+
+.service_possibilities-list{
+    margin-bottom: 2rem;
+}
+
+.service_premium-card{
+    width: 90%;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.questions_question{
+    margin: .7rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--white-text-color);
+    border-radius: 1rem;
+}
+
+.questions_question-plus{
+    font-size: var(--heading-h3);
+    font-weight: 100;
+    color: var(--text-color);
+    margin-left: 15rem;
+}
+
+.questions_question-text{
+    font-size: var(--heading-h4);
+    color: var(--btn-color);
+    font-weight: bold;
+}
+
+.questions_question-plus:hover{
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #DCE2F0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer_links{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+.footer_link{
+    color: var(--btn-color);
+    margin: 2rem;
+}
+
+.footer_logo-icon{
+    margin: 1rem;
+}
+
+.footer_logo-text{
+    color: var(--text-color);
+    margin: 1rem;
 }

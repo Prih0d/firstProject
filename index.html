@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Project</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
     <img src="./icons/Mask Group.png" alt="" class="background">
@@ -27,24 +29,21 @@
             <button class="main-page_btn-register">Register Now <img src="./icons/Arrow-Right 1.png" alt="" class="arrow-right"></button>
         </div>
         <div class="main-page_phone">
-            <img src="./icons/phone (1).png" alt="#" class="main-page_img-phone">
+            <div class="">
+                <img src="./icons/phone (1).png" alt="#" class="main-page_img-phone">
+                <img src="./icons/elements with phone.png" alt="" class="elements-with-phone">
+            </div>
             <div class="main-page_phone-elements">
                 <p class="main-page_phone-text">Credit Cards</p>
                 <div class="main-page_phone-cards">
                     <div class="main-page_phone-first-card">
-                        <div class="main-page_phone-first-card-circles">
-                            <div class="main-page_phone-first-card-circles1"></div>
-                            <div class="main-page_phone-first-card-circles2"></div>
+                        <div class="main-page_phone-card">
+                            <p class="main-page_phone-first-card-number">1234 5678 9123 ****</p>
+                            <p class="main-page_phone-first-card-name">Jane Cooper</p>
                         </div>
-                        <p class="main-page_phone-first-card-number">1234 5678 9123 ****</p>
-                        <p class="main-page_phone-first-card-name">Jane Cooper</p>
                         <img src="" alt="#" class="main-page_phone-first-card-logo">
                     </div>
                     <div class="main-page_phone-second-card">
-                        <div class="main-page_phone-second-card-circles">
-                            <div class="main-page_phone-second-card-circles1"></div>
-                            <div class="main-page_phone-second-card-circles2"></div>
-                        </div>
                         <p class="main-page_phone-second-card-number">1234 5678 9123 ****</p>
                         <p class="main-page_phone-second-card-name">Jane Cooper</p>
                         <img src="" alt="#" class="main-page_phone-second-card-logo">
@@ -119,97 +118,97 @@
         <div class="info-language_text">
             <p class="info-language_main-text">We support you in 5 different languages</p>
             <p class="info-language_small-text">Our support team in here to help you in 5 languages - English, French, Spanish,Polish and German.</p>
-            <img src="" alt="#" class="info-language_icons">+20
+            <div class="info-language_img-profile">
+                <img src="./icons/Profile Images.png" alt="#" class="info-language_icons">
+                <p class="info-language_profile-text">+20</p>
+            </div>
         </div>
-        <div class="info-language_chat"></div>
+        <div class="info-language_chat">
+            <img src="./icons/Chat.png" alt="#" class="info-language_img-chat">
+        </div>
     </div>
     <div class="service-advertising">
-        <p class="service-advertising_main-text">An exceptional service, at the right price.</p>
+        <p class="service-advertising_main-text">An exceptional service, <b class="service-advertising_main-text-red">at the right price.</b></p>
         <p class="service-advertising_small-text">Start with our free plan and switch to premium as you grow</p>
     </div>
     <div class="service">
-        <div class="service_free">
-            <p class="service_free-title">FREE</p>
-            <p class="service_free-price"><b class="free-price">$0</b>/m</p>
-            <div class="service_free-text">Manage your business with a simple and efficient account</div>
-            <button class="service_free-btn-started">Get Started</button>
+        <div class="service_block">
+            <p class="service_title">FREE</p>
+            <p class="service_price"><b class="sirvice_price">$0</b>/m</p>
+            <div class="service_text">Manage your business with a simple and efficient account</div>
+            <button class="custom-btn service_btn-started">Get Started</button>
             <img src="./icons/Credit Card.png" alt="#" class="service_premium-card">
-            <div class="service_free-possibilities">
-                <ul class="service_free-possibilities-list">
-                    <li class="service_free-possibilities-list-item">10 free local transfer</li>
-                    <li class="service_free-possibilities-list-item">10 free local transfer</li>
-                    <li class="service_free-possibilities-list-item">Multi-user access</li>
-                    <li class="service_free-possibilities-list-item">Prepaid debit cards</li>
-                    <li class="service_free-possibilities-list-item">Virtual cards</li>
-                    <li class="service_free-possibilities-list-item">Priority 24/7 support</li>
-                    <li class="service_free-possibilities-list-item">Exchange 24 currencies</li>
-                    <li class="service_free-possibilities-list-item">Free payment to other Draft accounts</li>
+            <div class="service_possibilities">
+                <ul class="service_possibilities-list">
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>10 free local transfer</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>10 free local transfer</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>Multi-user access</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>Prepaid debit cards</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>Virtual cards</li>
+                    <li class="service_possibilities-list-item-grey"><i class="fa fa-check color-grey"></i>Priority 24/7 support</li>
+                    <li class="service_possibilities-list-item-grey"><i class="fa fa-check color-grey"></i>Exchange 24 currencies</li>
+                    <li class="service_possibilities-list-item-grey"><i class="fa fa-check color-grey"></i>Free payment to other Draft accounts</li>
                 </ul>
             </div>
         </div>
-        <div class="service_premium">
-            <p class="service_premium-title">PREMIUM</p>
-            <p class="service_premium-price"><b class="premium-price">$0</b>/m</p>
-            <div class="service_premium-text">Manage your business with a simple and efficient account</div>
-            <button class="service_premium-btn-started">Get Started</button>
+        <div class="service_block">
+            <p class="service_title">PREMIUM</p>
+            <p class="service_price"><b class="sirvice_price">$8</b>/m</p>
+            <div class="service_text">Manage your business with a simple and efficient account</div>
+            <button class="custom-btn service_btn-started">Get Started</button>
             <img src="./icons/Credit Card.png" alt="#" class="service_premium-card">
-            <div class="service_premium-possibilities">
-                <ul class="service_premium-possibilities-list">
-                    <li class="service_premium-possibilities-list-item">10 free local transfer</li>
-                    <li class="service_premium-possibilities-list-item">10 free local transfer</li>
-                    <li class="service_premium-possibilities-list-item">Multi-user access</li>
-                    <li class="service_premium-possibilities-list-item">Prepaid debit cards</li>
-                    <li class="service_premium-possibilities-list-item">Virtual cards</li>
-                    <li class="service_premium-possibilities-list-item">Priority 24/7 support</li>
-                    <li class="service_premium-possibilities-list-item">Exchange 24 currencies</li>
-                    <li class="service_premium-possibilities-list-item">Free payment to other Draft accounts</li>
+            <div class="service_possibilities">
+                <ul class="service_possibilities-list">
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>10 free local transfer</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>10 free local transfer</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>Multi-user access</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>Prepaid debit cards</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>Virtual cards</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>Priority 24/7 support</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>Exchange 24 currencies</li>
+                    <li class="service_possibilities-list-item"><i class="fa fa-check"></i>Free payment to other Draft accounts</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="questions-advertising">
-        <p class="questions-advertising_main-text">Frequently asked questions</p>
+        <p class="questions-advertising_main-text">Frequently <b class="questions-advertising_main-text-red">asked questions</b></p>
         <p class="questions-advertising_small-text">If you are not sure whether Draft is suitable is for you or not, do not worry. We are here to explain everything you might want to know</p>
     </div>
     <div class="questions">
         <div class="questions_question">
-            <p class="questions_question-text">What is the difference between Draft and a traditional bank account?</p>
-            <img src="" alt="#" class="questions_question-icon">
+            <p class="questions_question-text">What is the difference between Draft and a traditional bank account?</p><b class="questions_question-plus">+</b>
         </div>
         <div class="questions_question">
-            <p class="questions_question-text">Who can open a Draft account?</p>
-            <img src="" alt="#" class="questions_question-icon">
+            <p class="questions_question-text">Who can open a Draft account?</p> <b class="questions_question-plus">+</b>
         </div>
         <div class="questions_question">
-            <p class="questions_question-text">What if I withdraw money abroad?</p>
-            <img src="" alt="#" class="questions_question-icon">
+            <p class="questions_question-text">What if I withdraw money abroad?</p><b class="questions_question-plus">+</b>
         </div>
         <div class="questions_question">
-            <p class="questions_question-text">Can I cancel my subscrption or switch to another plan anytime?</p>
-            <img src="" alt="#" class="questions_question-icon">
+            <p class="questions_question-text">Can I cancel my subscrption or switch to another plan anytime?</p><b class="questions_question-plus">+</b>
         </div>
         <div class="questions_question">
-            <p class="questions_question-text">What happens if I withdraw more than $250?</p>
-            <img src="" alt="#" class="questions_question-icon">
+            <p class="questions_question-text">What happens if I withdraw more than $250?</p><b class="questions_question-plus">+</b>
         </div>
     </div>
 </main>
 <footer class="footer">
     <div class="footer_logo">
-        <img src="" alt="#" class="footer_logo-icon">
+        <img src="./icons/Logo 1.png" alt="#" class="footer_logo-icon">
         <p class="footer_logo-text">Copyright © 2023  Draft LLC.</p>
         <p class="footer_logo-text">All rights reserved.</p>
     </div>
     <div class="footer_links">
-        <link rel="stylesheet" href="" class="footer_link">Team
-        <link rel="stylesheet" href="" class="footer_link">Press
-        <link rel="stylesheet" href="" class="footer_link">Fees
-        <link rel="stylesheet" href="" class="footer_link">Services
-        <link rel="stylesheet" href="" class="footer_link">Projects
-        <link rel="stylesheet" href="" class="footer_link">Affiliate
-        <link rel="stylesheet" href="" class="footer_link">Terms of use
-        <link rel="stylesheet" href="" class="footer_link">Privacy policy
-        <link rel="stylesheet" href="" class="footer_link">Contact us
+        <p class="footer_link">Team</p>
+        <p class="footer_link">Press</p>
+        <p class="footer_link">Fees</p>
+        <p class="footer_link">Services</p>
+        <p class="footer_link">Projects</p>
+        <p class="footer_link">Affiliate</p>
+        <p class="footer_link">Terms of use</p>
+        <p class="footer_link">Privacy policy</p>
+        <p class="footer_link">Contact us</p>
     </div>
 </footer>
 </body>
