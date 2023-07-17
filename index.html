@@ -18,7 +18,7 @@
             <li class="header-list_items">Feature</li>
             <li class="header-list_items">Pricing</li>
         </div>
-        <button class="header-list_btn-signup">Sign up</button>
+        <button class="custom-btn btn-15">Sign up</button>
     </ul>
 </header>
 <main class="main">
@@ -26,27 +26,29 @@
         <div class="main-page_text">
             <p class="main-page_main-text">Smart Banking for freelancers</p>
             <p class="main-page_small-text">Draft is a revolutionary mobile app built to help you manage your business easily and save your money.</p>
-            <button class="main-page_btn-register">Register Now <img src="./icons/Arrow-Right 1.png" alt="" class="arrow-right"></button>
+            <button id="btn-register" class="custom-btn btn-15">Register Now</button>
         </div>
         <div class="main-page_phone">
-            <div class="">
-                <img src="./icons/phone (1).png" alt="#" class="main-page_img-phone">
-                <img src="./icons/elements with phone.png" alt="" class="elements-with-phone">
-            </div>
+                <img src="./icons/laptop (3).png" alt="#" class="main-page_img-phone">
+                <img id="elements-with-phone" src="./icons/elements with phone.png" alt="" class="elements-with-phone">
             <div class="main-page_phone-elements">
                 <p class="main-page_phone-text">Credit Cards</p>
                 <div class="main-page_phone-cards">
                     <div class="main-page_phone-first-card">
+                        <img src="./icons/card.png" alt="" class="card">
                         <div class="main-page_phone-card">
                             <p class="main-page_phone-first-card-number">1234 5678 9123 ****</p>
                             <p class="main-page_phone-first-card-name">Jane Cooper</p>
                         </div>
-                        <img src="" alt="#" class="main-page_phone-first-card-logo">
+                        <img src="./icons/logo card.png" alt="#" class="main-page_phone-first-card-logo">
                     </div>
                     <div class="main-page_phone-second-card">
-                        <p class="main-page_phone-second-card-number">1234 5678 9123 ****</p>
-                        <p class="main-page_phone-second-card-name">Jane Cooper</p>
-                        <img src="" alt="#" class="main-page_phone-second-card-logo">
+                        <img src="./icons/card (1).png" alt="" class="card2">
+                        <div class="main-page_phone-card">
+                            <p class="main-page_phone-second-card-number">1234 5678 9123 ****</p>
+                            <p class="main-page_phone-second-card-name">Jane Cooper</p>
+                        </div>
+                        <img src="./icons/logo card.png" alt="#" class="main-page_phone-second-card-logo">
                     </div>
                 </div>
                 <p class="main-page_phone-text">Send Money To</p>
@@ -78,6 +80,7 @@
                     <div class="main-page_phone-overview-items1">+$89</div>
                     <div class="main-page_phone-overview-items">-$10</div>
                     <div class="main-page_phone-overview-items">-$29</div>
+                    <div class="main-page_phone-overview-items1">+$32</div>
                 </div>
 
             </div>
@@ -111,7 +114,7 @@
         <div class="graph_text">
             <p class="graph_main-text">Manage your finances like a pro in no time</p>
             <p class="graph_small-text">With Draft, book keeping, banking, and invoices are all in one place. You will always know where you stand.</p>
-            <button class="graph_btn-learn-more">Learn More <img src="./icons/Arrow-Right 1.png" alt="" class="arrow-right"></button>
+            <button class="btn-15 custom-btn second-btn">Learn More</button>
         </div>
     </div>
     <div class="info-language">
@@ -136,7 +139,7 @@
             <p class="service_title">FREE</p>
             <p class="service_price"><b class="sirvice_price">$0</b>/m</p>
             <div class="service_text">Manage your business with a simple and efficient account</div>
-            <button class="custom-btn service_btn-started">Get Started</button>
+            <button class="custom-btn btn-15 second-btn">Get Started</button>
             <img src="./icons/Credit Card.png" alt="#" class="service_premium-card">
             <div class="service_possibilities">
                 <ul class="service_possibilities-list">
@@ -155,7 +158,7 @@
             <p class="service_title">PREMIUM</p>
             <p class="service_price"><b class="sirvice_price">$8</b>/m</p>
             <div class="service_text">Manage your business with a simple and efficient account</div>
-            <button class="custom-btn service_btn-started">Get Started</button>
+            <button class="custom-btn btn-15 second-btn">Get Started</button>
             <img src="./icons/Credit Card.png" alt="#" class="service_premium-card">
             <div class="service_possibilities">
                 <ul class="service_possibilities-list">
@@ -177,20 +180,25 @@
     </div>
     <div class="questions">
         <div class="questions_question">
-            <p class="questions_question-text">What is the difference between Draft and a traditional bank account?</p><b class="questions_question-plus">+</b>
+            <p class="questions_question-text">What is the difference between Draft and a traditional bank account?</p><b class="questions_question-plus" data-button="button1">+</b>
         </div>
+        <div class="questions-content" data-button="button1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quae magnam molestias blanditiis earum aliquid, odio, aliquam commodi voluptas laboriosam minus fuga temporibus eaque consectetur iusto? Sapiente corrupti illo eveniet!</div>
         <div class="questions_question">
-            <p class="questions_question-text">Who can open a Draft account?</p> <b class="questions_question-plus">+</b>
+            <p class="questions_question-text">Who can open a Draft account?</p> <b class="questions_question-plus" data-button="button2">+</b>
         </div>
+        <div class="questions-content" data-button="button2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, adipisci reiciendis doloremque laboriosam neque sed soluta error voluptatum molestias! Qui mollitia facilis odit corporis tenetur, necessitatibus dolores earum nemo id.</div>
         <div class="questions_question">
-            <p class="questions_question-text">What if I withdraw money abroad?</p><b class="questions_question-plus">+</b>
+            <p class="questions_question-text">What if I withdraw money abroad?</p><b class="questions_question-plus" data-button="button3">+</b>
         </div>
+        <div class="questions-content" data-button="button3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, culpa itaque. Quia atque accusantium, mollitia numquam maiores, fugit quae et esse exercitationem beatae nisi magni dolores nulla vero iure rerum.</div>
         <div class="questions_question">
-            <p class="questions_question-text">Can I cancel my subscrption or switch to another plan anytime?</p><b class="questions_question-plus">+</b>
+            <p class="questions_question-text">Can I cancel my subscrption or switch to another plan anytime?</p><b class="questions_question-plus" data-button="button4">+</b>
         </div>
+        <div class="questions-content" data-button="button4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto odio, fuga vero debitis tenetur nobis et? Ab, suscipit tenetur quam commodi nostrum fuga eaque repudiandae labore, veritatis voluptates incidunt.</div>
         <div class="questions_question">
-            <p class="questions_question-text">What happens if I withdraw more than $250?</p><b class="questions_question-plus">+</b>
+            <p class="questions_question-text">What happens if I withdraw more than $250?</p><b class="questions_question-plus" data-button="button5">+</b>
         </div>
+        <div class="questions-content" data-button="button5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, natus, molestias laboriosam tempore iure assumenda maiores minima doloribus deserunt veniam quae officiis, corrupti itaque dolores vero deleniti veritatis delectus quo?</div>
     </div>
 </main>
 <footer class="footer">
@@ -201,13 +209,13 @@
     </div>
     <div class="footer_links">
         <p class="footer_link">Team</p>
-        <p class="footer_link">Press</p>
-        <p class="footer_link">Fees</p>
         <p class="footer_link">Services</p>
-        <p class="footer_link">Projects</p>
-        <p class="footer_link">Affiliate</p>
         <p class="footer_link">Terms of use</p>
+        <p class="footer_link">Press</p>
+        <p class="footer_link">Projects</p>
         <p class="footer_link">Privacy policy</p>
+        <p class="footer_link">Fees</p>
+        <p class="footer_link">Affiliate</p>
         <p class="footer_link">Contact us</p>
     </div>
 </footer>
