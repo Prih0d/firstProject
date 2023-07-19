@@ -42,14 +42,14 @@ main{
 }
 
 .background{
-    width: 2000px;
+    width: 100vw;
     height: 800px;
     position: absolute;
     z-index: -999;
 }
 
 .header{
-    width: 100%;
+    width: 80%;
     padding: 2rem;
     margin-bottom: 2rem;
 }
@@ -616,4 +616,56 @@ main{
 .footer_logo-text{
     color: var(--text-color);
     margin: 1rem;
+}
+
+@media (min-width :200px) and (max-width:1500px){
+    *{
+        max-width: 100vw;
+    }
+}
+
+@media (min-width :200px) and (max-width:567px){
+    .header-list, .main-page_phone, .footer{
+        display: none;
+    }
+
+    .main-page, .info-cards, .graph, .info-language, .service{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-page_main-text, .info-cards_main-text, .graph_main-text, .info-language_main-text, .service-advertising_main-text, .service_title, .service_price, .service_title, .questions-advertising_main-text{
+        font-size: var(--heading-h3);
+    }
+
+    .main-page_text, .info-cards, .info-cards_card, .graph_indicators, .graph_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-page_text, .main-page_small-text{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info-cards_card-logo, .questions_question-plus, .graph_info-block-balance, .graph_info-block-transaction, .graph_info{
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-page_img-phone, .elements-with-phone, .main-page_phone, .card, .card2, .info-language_icons, .info-language_img-chat, .info-cards_card-logo, .graph_img-indicator{
+        max-width: 80vw;
+    }
+
+    .graph_info-blocks{
+        max-width: 70vw;
+    }
+
+    .graph_info-value{
+        font-size: var(--heading-h4);
+    }
 }

@@ -18,10 +18,7 @@ function positionXY() {
     if(nowPositionX == 0 && nowPositionY == 15){
         nowPositionY = 0
     }
-    console.log(nowPositionX);
-    console.log(nowPositionY);
     wheelElements(elementsWithPhone)
-
 }
 
 
